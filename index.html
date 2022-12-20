@@ -13,9 +13,21 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Huesosnia 3.0</h1>
+    <div class="msg" id="ava">
+        <img src="./novodvorskaya.jpg" alt="" width="100%">
+    </div>
+    <div class="msg" id="pick-self">
+        <div class="poll-header">
+            Кто ты?
+        </div>
+        <div class="poll-meta" style="margin-bottom: 0.5em;">Poll</div>
+        <div class="poll-ops-placeholder">
+            
+        </div>
+        <div class="poll-meta" style="margin-top: 0.5em;">No votes</div>
+    </div>
     <div class="msg" id="poll">
-        <div id="poll-header">
+        <div class="poll-header">
             Кто интегрально круче?
         </div>
         <div class="poll-meta" style="margin-bottom: 0.5em;">Poll</div>
@@ -27,18 +39,21 @@
             <div class="circle" id="circle-op-2"></div>
             <div class="op-text" id="op-text-2">Даня</div>
         </div>
-        <div class="poll-meta" style="margin-top: 0.5em;">No votes</div>
+        <div class="poll-meta votes" style="margin-top: 0.5em;">No votes</div>
+    </div>
+    <div class="msg" id="rating">
+        <div id="rating-content"></div>
     </div>
     <div class="msg" id="export">
         <div class="sub">
             <span>Экспортировать.</span>
         </div>
     </div>
-    <div class="msg">
+    <div class="msg" id="sub-msg">
         <div class="sub">
             <a href="https://t.me/american_egregor">Подписаться.</a>
         </div>
     </div>
-    <script href="polling.js"> </script>
+    <script src="./polling.js"> </script>
 </body>
 </html>
